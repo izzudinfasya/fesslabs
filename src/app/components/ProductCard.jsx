@@ -36,7 +36,16 @@ export default function ProductCard({ product }) {
 
   return (
     <>
-      <Toaster position="top-center" reverseOrder={false} />
+      <Toaster
+        position="top-center"
+        reverseOrder={false}
+        toastOptions={{
+          style: {
+            boxShadow: "none",
+            border: "1px solid #e0e0e0",
+          },
+        }}
+      />
 
       <div
         className="block bg-muted rounded-lg flex flex-col transition-transform duration-300 hover:scale-102 hover:shadow-xl overflow-hidden cursor-pointer"
